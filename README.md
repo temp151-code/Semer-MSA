@@ -21,7 +21,7 @@ To support the reproducibility of our experiments, the processed PKL files used 
 The provided PKL files are made available solely for the purpose of peer review and reproducibility assessment of this submission. They must not be used, copied, redistributed, or repurposed for any other purpose without explicit permission from the authors.
 
 ## Data Preprocessing Notes
-During data preprocessing, we manually inspected and corrected a small number of samples in CMU-MOSI and CMU-MOSEI that showed clear anomalies. In CMU-MOSEI, approximately 20 samples were corrected or removed due to issues such as corrupted files, abnormal durations, or inconsistent information. Two additional samples in CMU-MOSI underwent similar processing.
+During data preprocessing, we manually inspected and corrected a small number of samples in CMU-MOSI and CMU-MOSEI that showed clear anomalies. In CMU-MOSEI, approximately 20-50 samples were corrected or removed due to issues such as corrupted files, abnormal durations, or inconsistent information. Two additional samples in CMU-MOSI underwent similar processing.
 
 In addition, a small number of auxiliary annotation fields were corrected. These fields were not used for model training, validation, or final performance evaluation. Since these cleaning steps were performed at an early stage of the project, a complete sample-level modification log is no longer available. We therefore report the general processing principles and approximate scale here rather than providing a potentially inaccurate retrospective list.
 
