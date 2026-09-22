@@ -16,6 +16,11 @@ Duration (duration_sec)	2.35 / 4.2478	8.27 / 12.27
 
 ## Data Availability
 
+We have shared the processed and extracted data on Baidu Netdisk under the name DATA-for-Semer-MSA.
+Link: https://pan.baidu.com/s/1Ii819YVgUUVDiE41AMF4DQ
+Extraction code: er41 
+If you do not have access to Baidu Netdisk, you may also refer to the log files we have uploaded.
+
 To support the reproducibility of our experiments, the processed PKL files used in this study will be made available via Baidu Netdisk. If Baidu Netdisk is not accessible in your region, we will also provide the corresponding experiment logs to facilitate verification of the reported results.
 
 The provided PKL files are made available solely for the purpose of peer review and reproducibility assessment of this submission. They must not be used, copied, redistributed, or repurposed for any other purpose without explicit permission from the authors.
