@@ -14,6 +14,23 @@ Voicing ratio (voiced_ratio)	0.38323 / 0.56435	0.26038 / 0.46628
 Speaking-rate proxy (rate_proxy_peaks_per_sec)	4.41176 / 4.96036	4.01203 / 4.77313
 Duration (duration_sec)	2.35 / 4.2478	8.27 / 12.27
 
+## LLM-based Audio Description
+
+The following prompt is used for the audio modality to generate
+acoustic prosody descriptions from the extracted audio features.
+
+No emotion labels, annotations, or transcript content are provided
+to the LLM during audio description generation.
+
+### Model Configuration
+- Model: GPT-4o-mini
+- Temperature: 0.2
+- Max tokens: 320
+- Seed: 42
+
+Due to potential differences in seed handling and minor variations across execution environments, the generated content may differ slightly across runs.
+
+
 ## Data Availability
 
 We have shared the processed and extracted data on Baidu Netdisk under the name DATA-for-Semer-MSA.
