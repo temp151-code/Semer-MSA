@@ -36,7 +36,6 @@ Due to potential differences in seed handling and minor variations across execut
 We have shared the processed and extracted data on Baidu Netdisk under the name DATA-for-Semer-MSA.
 Link: https://pan.baidu.com/s/1Ii819YVgUUVDiE41AMF4DQ
 Extraction code: er41 
-If you do not have access to Baidu Netdisk, you may also refer to the log files we have uploaded.
 
 To support the reproducibility of our experiments, the processed PKL files used in this study will be made available via Baidu Netdisk. If Baidu Netdisk is not accessible in your region, we will also provide the corresponding experiment logs to facilitate verification of the reported results.
 
