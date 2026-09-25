@@ -1,3 +1,7 @@
+## Content We Make Public in This Project
+
+The prompts and related parameters used for the LLM, the MSA terminal code, and the complete dataset, including AI-enhanced texts and the extracted features.
+
 ## Acoustic Feature Discretization
 
 For the acoustic semantic enhancement pipeline, continuous acoustic descriptors were discretized into categorical levels before being converted into textual descriptions. For each dataset, the 33rd and 66th percentiles were estimated exclusively from the training split and used as fixed thresholds for discretizing loudness, loudness dynamics, pitch variability, voicing ratio, speaking-rate proxy, and utterance duration. The same training-derived thresholds were then applied unchanged to the validation and test sets.
