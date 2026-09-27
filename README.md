@@ -51,4 +51,8 @@ During data preprocessing, we manually inspected and corrected a small number of
 
 In addition, a small number of auxiliary annotation fields were corrected. These fields were not used for model training, validation, or final performance evaluation. Since these cleaning steps were performed at an early stage of the project, a complete sample-level modification log is no longer available. We therefore report the general processing principles and approximate scale here rather than providing a potentially inaccurate retrospective list.
 
-
+# Acknowledge
+We thank the following open-source projects and code repositories for supporting our learning and exploration during the early stages of this project:
+https://github.com/XpastaX/ConFEDE
+https://github.com/yaohungt/Multimodal-Transformer
+ We also acknowledge generative AI tools, including ChatGPT and DeepSeek, for providing programming assistance and supporting exploratory discussions during the development of this project.
