@@ -1,3 +1,8 @@
+## Content We Make Public in This Project
+
+The prompts and related parameters used for the LLM, the MSA terminal code, and the complete dataset, including AI-enhanced texts and the extracted features.
+
+The three implementations use fixed random seeds of 42, 43, and 44, respectively.
 ## Acoustic Feature Discretization
 
 For the acoustic semantic enhancement pipeline, continuous acoustic descriptors were discretized into categorical levels before being converted into textual descriptions. For each dataset, the 33rd and 66th percentiles were estimated exclusively from the training split and used as fixed thresholds for discretizing loudness, loudness dynamics, pitch variability, voicing ratio, speaking-rate proxy, and utterance duration. The same training-derived thresholds were then applied unchanged to the validation and test sets.
@@ -14,12 +19,28 @@ Voicing ratio (voiced_ratio)	0.38323 / 0.56435	0.26038 / 0.46628
 Speaking-rate proxy (rate_proxy_peaks_per_sec)	4.41176 / 4.96036	4.01203 / 4.77313
 Duration (duration_sec)	2.35 / 4.2478	8.27 / 12.27
 
+## LLM-based Audio Description
+
+The following prompt is used for the audio modality to generate
+acoustic prosody descriptions from the extracted audio features.
+
+No emotion labels, annotations, or transcript content are provided
+to the LLM during audio description generation.
+
+### Model Configuration
+- Model: GPT-4o-mini
+- Temperature: 0.2
+- Max tokens: 320
+- Seed: 42
+
+Due to potential differences in seed handling and minor variations across execution environments, the generated content may differ slightly across runs.
+
+
 ## Data Availability
 
 We have shared the processed and extracted data on Baidu Netdisk under the name DATA-for-Semer-MSA.
 Link: https://pan.baidu.com/s/1Ii819YVgUUVDiE41AMF4DQ
 Extraction code: er41 
-If you do not have access to Baidu Netdisk, you may also refer to the log files we have uploaded.
 
 To support the reproducibility of our experiments, the processed PKL files used in this study will be made available via Baidu Netdisk. If Baidu Netdisk is not accessible in your region, we will also provide the corresponding experiment logs to facilitate verification of the reported results.
 
@@ -30,4 +51,8 @@ During data preprocessing, we manually inspected and corrected a small number of
 
 In addition, a small number of auxiliary annotation fields were corrected. These fields were not used for model training, validation, or final performance evaluation. Since these cleaning steps were performed at an early stage of the project, a complete sample-level modification log is no longer available. We therefore report the general processing principles and approximate scale here rather than providing a potentially inaccurate retrospective list.
 
-
+# Acknowledge
+We thank the following open-source projects and code repositories for supporting our learning and exploration during the early stages of this project:
+https://github.com/XpastaX/ConFEDE
+https://github.com/yaohungt/Multimodal-Transformer
+ We also acknowledge generative AI tools, including ChatGPT and DeepSeek, for providing programming assistance and supporting exploratory discussions during the development of this project.
