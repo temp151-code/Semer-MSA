@@ -57,13 +57,16 @@ During data preprocessing, we manually inspected and corrected a small number of
 
 In addition, a small number of auxiliary annotation fields were corrected. These fields were not used for model training, validation, or final performance evaluation. Since these cleaning steps were performed at an early stage of the project, a complete sample-level modification log is no longer available. We therefore report the general processing principles and approximate scale here rather than providing a potentially inaccurate retrospective list.
 
-## Video Preprocessing
+### Video Preprocessing
 
 For videos with a duration of at least one second, frames were sampled at a rate of 1 frame per second (1 fps). For videos shorter than one second, frames were processed individually.
 
 During preprocessing, incomplete or corrupted frames (e.g., frames containing only partial image content) caused by video decoding or reading errors were excluded to ensure valid visual inputs.
 
 Finally, the middle frame of the remaining valid frame sequence was selected for subsequent visual feature extraction.
+
+Data preprocessing was conducted during an early stage of this project. We have released the processed features used in our experiments to support reproducibility and further analysis. If you identify any errors or inconsistencies in the released data or preprocessing documentation, please feel free to open a GitHub issue. We will review the reported issues and make corrections where necessary.
+
 # Acknowledge
 We thank the following open-source projects and code repositories for supporting our learning and exploration during the early stages of this project:
 https://github.com/XpastaX/ConFEDE;
