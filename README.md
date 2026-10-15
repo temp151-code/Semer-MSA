@@ -64,6 +64,6 @@ During preprocessing, incomplete or corrupted frames (e.g., frames containing on
 Finally, the middle frame of the remaining valid frame sequence was selected for subsequent visual feature extraction.
 # Acknowledge
 We thank the following open-source projects and code repositories for supporting our learning and exploration during the early stages of this project:
-https://github.com/XpastaX/ConFEDE
+https://github.com/XpastaX/ConFEDE;
 https://github.com/yaohungt/Multimodal-Transformer
  We also acknowledge generative AI tools, including ChatGPT and DeepSeek, for providing programming assistance and supporting exploratory discussions during the development of this project.
