@@ -48,6 +48,8 @@ Extraction code: 5qiq
 
 To support the reproducibility of our experiments, the processed PKL files used in this study will be made available via Baidu Netdisk. If Baidu Netdisk is not accessible in your region, we will also provide the corresponding experiment logs to facilitate verification of the reported results.
 
+The provided `.pkl` files contain preprocessed features from the three original modalities (text, audio, and visual), their corresponding LLM-enhanced features, and the original utterances. Users can load these files using Python's `pickle` module to inspect the stored enhanced features and other data.
+
 The provided PKL files are made available solely for the purpose of peer review and reproducibility assessment of this submission. They must not be used, copied, redistributed, or repurposed for any other purpose without explicit permission from the authors.
 
 ## Data Preprocessing Notes
