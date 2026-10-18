@@ -34,7 +34,11 @@ to the LLM during audio description generation.
 - Seed: 42
 
 Due to potential differences in seed handling and minor variations across execution environments, the generated content may differ slightly across runs.
+### LLM-Generated Augmentation Examples
 
+The `LLM-augmentation/` directory provides examples of LLM-generated augmentation outputs for the CMU-MOSEI dataset. These files are included for reference and inspection, allowing users to examine the generated information across different modalities.
+
+**Re-running the LLM augmentation process is not required to reproduce our experiments.** The provided `.pkl` files already contain the corresponding LLM-augmented information and can be used directly for subsequent training and evaluation.
 
 ## Data Availability
 
